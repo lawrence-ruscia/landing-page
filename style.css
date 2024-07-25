@@ -6,17 +6,21 @@
 
 body {
   font-family: Arial, Helvetica, sans-serif;
-  display: flex;
-  flex-direction: column;
 }
 
 /* Header */
 .header {
-  background-color: #1f2937;
-  min-height: 100px;
+  background-color: #111827;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
+  padding: 8px 10%;
+
+  border-bottom: 1px solid #1f2937;
+}
+
+.logo {
+  max-width: 220px;
 }
 
 .header p {
@@ -33,68 +37,77 @@ body {
 
 .header__link-text a {
   text-decoration: none;
+  margin-left: 32px;
+}
+
+.header__link-text .link:hover {
+  text-decoration: underline;
+}
+
+.header__link-text .link {
   font-size: 18px;
   color: #e5e7eb;
-  margin-left: 30px;
+  cursor: pointer;
 }
 
 /* Hero */
 .hero {
-  background-color: #1f2937;
-  display: flex;
+  background-color: #111827;
   min-height: 500px;
-  justify-content: center;
   align-items: center;
-}
-
-/* Container */
-.hero__container {
   display: flex;
-  justify-content: center;
-  height: 300px;
-  width: 66%;
+  justify-content: space-between;
+  padding: 0 10%;
 }
 
 /* Content */
-.hero__content {
+.hero-content {
   display: flex;
-  flex: 1;
   flex-direction: column;
   align-items: start;
   flex-wrap: wrap;
+  gap: 3px;
 }
 
-.hero__content h1 {
+.hero-content h1 {
   font-size: 48px;
   font-weight: bolder;
   color: #f9faf8;
 }
 
-.hero__content h2 {
+.hero-content p {
   font-size: 18px;
   font-weight: lighter;
   color: #e5e7eb;
   margin-bottom: 10px;
 }
 
-.hero__content button {
+.hero-content button {
   border: 0;
-  background-color: #3882f6;
-  color: #f9faf8;
-  font-size: 17px;
+  background-color: #f9faf8;
+
+  font-size: 15px;
   font-weight: bold;
+
   width: 120px;
-  height: 35px;
-  border-radius: 10px;
+  height: 40px;
+  border-radius: 0.5rem;
+
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.hero-content button:hover {
+  background-color: #f9faf8a1;
 }
 
 /* Image */
 .hero__image {
   display: flex;
-  flex: 1;
 }
 
 .hero__image img {
-  max-height: 400px;
-  flex: 1 1 460px;
+  max-width: 500px;
+  height: auto;
+  border-radius: 1rem;
 }
