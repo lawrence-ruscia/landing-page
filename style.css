@@ -155,7 +155,7 @@ body {
 /* Mid-content*/
 .content__mid-container {
   background-color: #e5e7eb;
-  min-height: 500px;
+  min-height: 450px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -176,3 +176,52 @@ body {
   font-weight: bold;
   margin-left: auto;
 }
+
+/* Bot-content */
+.content__bot-container {
+  min-height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content__bot-container .container {
+  background: #3882f6;
+  width: 80%;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 10px;
+}
+
+.container .card {
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+  padding: 0 15%;
+}
+
+.card .content {
+  color: #e5e7eb;
+}
+.content .title {
+  font-size: 30px;
+  font-weight: 800;
+}
+
+.content button {
+  height: 35px;
+  width: 110px;
+  align-self: center;
+
+  background-color: #3882f6;
+  border: 2px solid #f9faf8;
+  border-radius: 5px;
+
+  color: #f9faf8;
+  font-weight: bold;
+}
+
+/* Footer */
