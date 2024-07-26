@@ -228,6 +228,12 @@ body {
 
   color: #f9faf8;
   font-weight: bold;
+
+  cursor: pointer;
+}
+
+.content button:hover {
+  background-color: #5d9bff;
 }
 
 /* Footer */
