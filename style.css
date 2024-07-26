@@ -111,3 +111,47 @@ body {
   height: auto;
   border-radius: 1rem;
 }
+
+/* Content */
+
+/* Top-content*/
+.content__top-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid red;
+  min-height: 500px;
+  padding: 3rem;
+}
+
+.content__top-container h2 {
+  font-size: 36px;
+  font-weight: 800;
+  color: #111827;
+  margin-bottom: 3rem;
+}
+
+.content__boxes {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+}
+.box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.box-content {
+  width: 150px;
+  height: 150px;
+  border: 5px solid #3882f6;
+  border-radius: 10px;
+  margin-bottom: 5px;
+}
+
+.box-text {
+  text-align: center;
+}
+
+/* Mid-content*/
